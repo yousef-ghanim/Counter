@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sum {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-family: cursive;
+}
+
+button {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.7rem;
+  border-radius: 0.3rem;
+  border: 0.01rem solid rgb(196, 196, 196);
+  margin: 0 0.3rem;
+}
