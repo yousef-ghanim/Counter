@@ -28,33 +28,28 @@
 //  sum.style.color = "black";
 // })
 
-
-
-
 const sum = document.querySelector(".sum");
 const btns = document.querySelectorAll(".btn");
 
 let count = 0;
 
 btns.forEach((btn) => {
-    btn.addEventListener("click", (e) =>{
-        const style = e.currentTarget.classList;
-        if(style.contains("dec")){
-            count --;
-        }else if(style.contains("inc")){
-            count ++;
-        }else{
-            count = 0;
-        }
-        if (count > 0){
-            sum.style.color = "green"
-        }
-        else if (count < 0){
-            sum.style.color = "red"
-        } else{
-            sum.style.color = "black"
-        }
-        sum.textContent = count;
-    })
-})
-
+  btn.addEventListener("click", (e) => {
+    const style = e.currentTarget.classList;
+    if (style.contains("dec")) {
+      count--;
+    } else if (style.contains("inc")) {
+      count++;
+    } else {
+      count = 0;
+    }
+    if (count > 0) {
+      sum.style.color = "green";
+    } else if (count < 0) {
+      sum.style.color = "red";
+    } else {
+      sum.style.color = "black";
+    }
+    sum.textContent = count;
+  });
+});
